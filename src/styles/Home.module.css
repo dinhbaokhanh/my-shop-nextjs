@@ -1,0 +1,133 @@
+.main {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  min-height: 100vh;
+}
+
+.children {
+  margin: auto;
+  padding-left: 24px;
+  padding-right: 24px;
+}
+
+.navbar {
+  position: sticky;
+  z-index: 1;
+  top: 0;
+}
+
+.maxwidth {
+  display: flex;
+  justify-content: space-between;
+  padding: 10px 20px;
+  color: #40b9dd;
+}
+
+.menu {
+  display: flex;
+  list-style-type: none;
+  padding: 10px 20px;
+  font-size: 20px;
+  letter-spacing: -.5px;
+  text-decoration: none;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+.logo {
+  margin-left: -15px;
+  display: inline-block;
+  padding: 10px 20px;
+  font-size: 20px;
+  letter-spacing: -.5px;
+  text-decoration: none;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+.a {
+  margin-left: -15px;
+  display: inline-block;
+  padding: 10px 20px;
+  font-size: 20px;
+  letter-spacing: -.5px;
+  text-decoration: none;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+.cart {
+  margin-left: -15px;
+  display: inline-block;
+  padding: 10px 20px;
+  font-size: 20px;
+  letter-spacing: -.5px;
+  text-decoration: none;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+.cartIcon {
+  margin-top: 3px;
+}
+
+.cartSpan {
+  display: inline-flex;
+  margin-left: 5px;
+  justify-content: center;
+  align-items: center;
+  width: 15px;
+  height: 15px;
+  border-radius: 50%;
+  font-size: 12px;
+  line-height: 16px;
+  background-color: #40b9dd;
+  color: white;
+}
+
+.user {
+  max-width: 100%;
+  margin-top: 10px;
+  display: flex;
+  justify-content: space-between;
+}
+
+.userMenu {
+  position: relative;
+  display: inline-block;
+}
+
+.userItems {
+  position: absolute;
+  right: 0;
+  width: 56px;
+  transform-origin: top right;
+  box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.1), 0 4px 6px -2px rgba(0, 0, 0, 0.05);
+}
+
+.line {
+  height: 1.5px;
+  background-color: #40b9dd;
+}
+
+.footer {
+  margin-top: 50px;
+  background-color: #333;
+  color: #fff;
+}
+
+.container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 10px;
+}
+
+.item {
+  margin: 10px;
+}
+
+@media only screen and (max-width: 700px) {
+  .a {
+    display: none;
+  }
+
+}
