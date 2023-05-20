@@ -125,6 +125,48 @@
   margin: 10px;
 }
 
+.menu {
+  position: relative;
+  margin-left: -15px;
+  display: inline-block;
+  padding: 10px 20px;
+  font-size: 20px;
+  letter-spacing: -.5px;
+  text-decoration: none;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+.menuButton {
+  border: none;
+  background: white;
+  font-size: 20px;
+  color: #40b9dd;
+  cursor: pointer;
+}
+
+.menuItems {
+  position: absolute;
+  right: 0;
+  transform-origin: top right;
+  background-color: white;
+  box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.1),
+    0 4px 6px -2px rgba(0, 0, 0, 0.05);
+}
+
+.dropdownItem {
+  font-size: 18px;
+  margin-top: 8px;
+  cursor: pointer;
+  justify-content: center;
+}
+
+.dropdownItem:hover {
+  background-color: rgb(224, 224, 224);
+  margin: 10px;
+  font-size: 18px;
+  cursor: pointer;
+}
+
 @media only screen and (max-width: 700px) {
   .a {
     display: none;

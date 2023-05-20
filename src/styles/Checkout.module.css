@@ -1,0 +1,57 @@
+.wrapper {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 800px;
+    margin: 0 auto;
+}
+  
+.stepItem {
+    flex: 1;
+    border-bottom: 2px solid #ccc;
+    text-align: center;
+    color: #ccc;
+    padding: 8px;
+    font-size: 18px;
+}
+  
+.activeStep {
+    border-color: #40b9dd;
+    color: #40b9dd;
+}
+  
+.inactiveStep {
+    border-color: #ccc;
+    color: #ccc;
+}
+  
+
+.form {
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.input {
+    width: 300px;
+    padding: 0.5rem;
+}
+
+.btn {
+    background-color: #40b9dd;
+    color: #fff;
+    font-size: 16px;
+    border-radius: 4px;
+    border: none;
+    padding: 10px 20px;
+    width: 60%;
+    margin: auto;
+    text-align: center;
+    cursor: pointer;
+}
+
+@media (min-width: 768px) {
+    .form {
+        max-width: 100%;
+        max-width: calc(100vw - 32px);
+    }
+  }

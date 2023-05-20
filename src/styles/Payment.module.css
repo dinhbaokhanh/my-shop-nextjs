@@ -1,0 +1,44 @@
+.form {
+    max-width: 700px; 
+    margin-left: auto; 
+    margin-right: auto; 
+}
+
+.option {
+    padding: 0.5rem;
+    outline: none; 
+}
+  
+.option:focus {
+    outline: none; 
+}
+
+.container {
+    display: flex;
+    justify-content: space-between;
+    margin: 1rem;
+}
+
+.prev {
+    background-color: #fff;
+    color: #333;
+    border-radius: 4px;
+    padding: 0.5rem 1rem;
+    font-size: 1rem;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    border: 1px solid #ccc;
+    cursor: pointer;
+}
+
+.btn {
+    background-color: #40b9dd;
+    color: #fff;
+    border-radius: 4px;
+    padding: 0.5rem 1rem;
+    font-size: 1rem;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    border: none;
+    cursor: pointer;
+}

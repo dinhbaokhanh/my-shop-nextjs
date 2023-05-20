@@ -1,0 +1,73 @@
+.container {
+    display: grid;
+    grid-template-columns: repeat(2, 2fr);
+    gap: 5px;
+}
+
+.wrapper {
+    display: table;
+    overflow-x: auto;
+}
+
+.item {
+    display: flex;
+    margin-bottom: 20px;
+    justify-content: space-between;
+}
+
+.card {
+    list-style: none;
+    background-color: white;
+    border-radius: 0.25rem;
+    box-shadow: 0 0.125rem 0.25rem rgba(0, 0, 0, 0.075);
+    padding: 2rem;
+}
+
+.title {
+    margin-bottom: 0.5rem;
+    font-size: 1.25rem;
+}
+
+.th {
+    padding-left: 1.25rem;
+    padding-right: 1.25rem;
+    text-align: left;
+}
+
+.rth {
+    padding-left: 1.25rem;
+    padding-right: 1.25rem;
+    text-align: right;
+}
+
+.cont {
+    background-color: white;
+    border-radius: 0.25rem;
+    box-shadow: 0 0.125rem 0.25rem rgba(0, 0, 0, 0.075);
+    overflow-x: auto;
+    padding: 1.5rem;
+}
+
+.edit {
+    margin-top: 40px;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    color: #02799d;
+}
+
+.btn {
+    background-color: #40b9dd; /* some primary color */
+    color: #fff;
+    padding: 0.75rem 1.5rem;
+    border-radius: 0.25rem;
+    font-size: 1rem;
+    line-height: 1.5;
+    border: none;
+    cursor: pointer;
+    width: 100%;
+}
+
+@media (max-width: 768px) {
+    .container {
+      grid-template-columns: repeat(2, 1fr);
+    }
+}

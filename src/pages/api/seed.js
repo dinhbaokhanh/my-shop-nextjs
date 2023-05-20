@@ -1,14 +1,15 @@
-import db from "./db.js";
-import User from "../../../models/User.js";
+import User from '../../../models/User';
+import Product from '../../../models/Product';
+import data from './data';
+import db from './db';
 
 const handler = async (req, res) => {
-    await db.connect();
-    await User.deleteMany();
-    await User.insertMany(data.users);
-    await db.disconnect();
-    res.send({
-        message: 'Success'
-    })
-}
-
+  await db.connect();
+  await User.deleteMany();
+  await User.insertMany(data.users);
+  await Product.deleteMany();
+  await Product.insertMany(data.products);
+  await db.disconnect();
+  res.send({ message: 'seeded successfully' });
+};
 export default handler;

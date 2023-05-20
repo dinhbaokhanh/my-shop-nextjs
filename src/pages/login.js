@@ -1,24 +1,27 @@
-import React, { useEffect } from 'react'
-import { signIn, useSession } from 'next-auth/react'
+import React, {useEffect} from 'react'
 import Layout from '../../components/Layout'
 import styles from '@/styles/Login.module.css'
 import Link from 'next/link'
 import { useForm } from 'react-hook-form'
-import { getError } from './api/error'
+import { signIn, useSession } from 'next-auth/react'
 import { toast } from 'react-toastify'
+import { getError } from './api/error'
 import { useRouter } from 'next/router'
 
 const LoginPage = () => {
     const { data: session } = useSession();
+
     const router = useRouter();
     const { redirect } = router.query;
+
     useEffect(() => {
-        if(session?.user){
+        if (session?.user) {
             router.push(redirect || '/');
         }
-    }, [router, session, redirect])
+    }, [router, session, redirect]);
 
     const { handleSubmit, register, formState : { errors }} = useForm();
+    
     const submitClick = async ({ email, password}) => {
         try {
             const result = await signIn('credentials', {
@@ -32,7 +35,7 @@ const LoginPage = () => {
         } catch (err) {
             toast.error(getError(err));
         }
-    }
+    };
 
     return (
         <Layout title='Login'>
@@ -78,7 +81,7 @@ const LoginPage = () => {
                 </div>
 
                 <p className={styles.p}>Dont't have an account ? &nbsp;
-                    <Link href="register"> Register </Link> here
+                    <Link href="/register"> Register </Link> here
                 </p>    
             </form>
         </Layout>

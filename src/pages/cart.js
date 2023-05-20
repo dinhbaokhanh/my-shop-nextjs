@@ -49,7 +49,7 @@ const CartPage = () => {
                     <td className={styles.border}>
                       <div className={styles.productInfo}>
                         <Image
-                          src={item.image[0]}
+                          src={item.image}
                           alt={item.name}
                           width={60}
                           height={60}
@@ -87,7 +87,7 @@ const CartPage = () => {
               Subtotal ({cartItems.reduce((i, j) => i + j.quantity, 0)}) :&nbsp;
               {cartItems.reduce((i, j) => i + j.quantity * j.price, 0)} VND
               <div className={styles.space}></div>
-              <div onClick={() => router.push('login?re/shipping')} className={styles.checkOut}>
+              <div onClick={() => router.push('login?redirect=/shipping')} className={styles.checkOut}>
                 Check Out
               </div>
             </div>
